@@ -1,0 +1,37 @@
+{
+  "C": 0.1,
+  "coefficients": {
+    "between": -0.22120933315837246,
+    "boosts": 10.911894056837632,
+    "clutter": -1.4327883034135387,
+    "distance": -1.4755779773420796,
+    "is_NA": -0.747890725087881,
+    "keyword": -3.9353256769103933,
+    "order": 0.5015237656441316,
+    "uncertainty": 6.4202189037555435
+  },
+  "intercept": 0.2231818274260606,
+  "metadata": {
+    "development_source_sha256": "df25c0488ad59a57348f0eae35741695dfb10cc8a29c6544df37ea4e32b32990",
+    "final_fit_seconds": 0.010232374974293634,
+    "train_n": 4241,
+    "train_split": "official dev, deduplicated valid labeled records"
+  },
+  "schema_version": 1,
+  "score_note": "Noise probability estimate; not externally calibrated.",
+  "thresholds": {
+    "recall90": {
+      "NA": 0.16671514546396776,
+      "non-NA": 0.16640629965989032
+    },
+    "retain90": {
+      "NA": 0.3654341792259113,
+      "non-NA": 0.3738115207100827
+    },
+    "retain95": {
+      "NA": 0.43022491776497573,
+      "non-NA": 0.43090474959103814
+    }
+  },
+  "variant": "rule_lr"
+}

@@ -1,0 +1,26 @@
+{
+  "context_lr": {
+    "median_seconds": 0.25467974999628495,
+    "model_json_bytes": 4093035,
+    "n": 4050,
+    "scope": "feature extraction + portable JSON scoring + decisions; excludes disk IO",
+    "seconds": [
+      0.2546220830117818,
+      0.2547374169807881,
+      0.2548380419902969,
+      0.25432420801371336
+    ]
+  },
+  "rule_lr": {
+    "median_seconds": 0.15382649999810383,
+    "model_json_bytes": 1042,
+    "n": 4050,
+    "scope": "feature extraction + portable JSON scoring + decisions; excludes disk IO",
+    "seconds": [
+      0.15488524999818765,
+      0.1537841249955818,
+      0.15386887500062585,
+      0.15373308400739916
+    ]
+  }
+}

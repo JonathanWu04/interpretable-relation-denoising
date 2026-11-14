@@ -1,0 +1,12 @@
+{
+  "data_download_verified_against_official_archive": true,
+  "unit_tests_passed": 7,
+  "metric_tables_independently_recomputed": 126,
+  "inference_cli_original_mentions": 533,
+  "inference_cli_span_abstentions": 200,
+  "report_pages_visually_checked": 6,
+  "independent_clean_environment_full_reproduction": "all aggregate metrics exactly equal",
+  "fresh_official_download_sha256_verified": true,
+  "portable_json_matches_sklearn": "all learned models on development within 1e-12",
+  "protocol_sha256": "0167afc113486f0f9c461074a05c9e1845ac81c53671a2a1427ad6cab1244268"
+}

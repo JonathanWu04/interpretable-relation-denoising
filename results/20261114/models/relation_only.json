@@ -1,0 +1,40 @@
+{
+  "C": 1.0,
+  "coefficients": {
+    "relation=/business/company/founders": -1.0168698303212422,
+    "relation=/business/person/company": -1.0775490501312528,
+    "relation=/location/country/capital": 1.2830532526698666,
+    "relation=/location/location/contains": -0.9485207146516809,
+    "relation=/location/neighborhood/neighborhood_of": 0.9117875736301809,
+    "relation=/people/deceased_person/place_of_death": -0.17575219130430203,
+    "relation=/people/person/children": 0.24037745401084884,
+    "relation=/people/person/nationality": -1.2035640764326008,
+    "relation=/people/person/place_lived": 0.7838770798971267,
+    "relation=/people/person/place_of_birth": 1.204773458465021,
+    "relation=NA": -0.574064345082512
+  },
+  "intercept": -0.5724513892824648,
+  "metadata": {
+    "development_source_sha256": "df25c0488ad59a57348f0eae35741695dfb10cc8a29c6544df37ea4e32b32990",
+    "final_fit_seconds": 0.004284291993826628,
+    "train_n": 4241,
+    "train_split": "official dev, deduplicated valid labeled records"
+  },
+  "schema_version": 1,
+  "score_note": "Noise probability estimate; not externally calibrated.",
+  "thresholds": {
+    "recall90": {
+      "NA": 0.23480776807145864,
+      "non-NA": 0.17047225707582767
+    },
+    "retain90": {
+      "NA": 0.2556182644840122,
+      "non-NA": 0.5616337750422256
+    },
+    "retain95": {
+      "NA": 0.2556182644840122,
+      "non-NA": 0.6057042837941612
+    }
+  },
+  "variant": "relation_only"
+}

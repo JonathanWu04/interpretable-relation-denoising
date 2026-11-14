@@ -1,0 +1,19 @@
+{
+  "elapsed_seconds": 30.444421833002707,
+  "models": [
+    "manual",
+    "rule_lr",
+    "relation_only",
+    "rule_relation",
+    "context_only",
+    "context_lr"
+  ],
+  "protocol_sha256": "0167afc113486f0f9c461074a05c9e1845ac81c53671a2a1427ad6cab1244268",
+  "selected": {
+    "context_promotion_passed": true,
+    "no_pristine_holdout": true,
+    "policy": "retain90",
+    "selected_variant": "context_lr",
+    "selection_used": "development OOF only; protocol promotion gate"
+  }
+}

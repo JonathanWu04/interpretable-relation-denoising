@@ -1,0 +1,34 @@
+{
+  "test": {
+    "duplicate_annotations": 9,
+    "eligible_records": 4050,
+    "entity_pairs": 2015,
+    "input_records": 4484,
+    "invalid_or_ambiguous_span": 425,
+    "labels": {
+      "False": 3068,
+      "True": 982
+    },
+    "sentence_groups": 1486,
+    "source_sha256": "b9d688b4a2265c27e39149c5ef5c3a3136669e05c2b7c09e87a1775e9df57e10",
+    "without_dev_text": 3966,
+    "without_dev_text_or_pair": 2735
+  },
+  "test_noise": {
+    "conflicting_annotations": 2,
+    "duplicate_annotations": 26,
+    "eligible_records": 301,
+    "entity_pairs": 184,
+    "input_records": 533,
+    "invalid_or_ambiguous_span": 200,
+    "labels": {
+      "False": 116,
+      "True": 185
+    },
+    "sentence_groups": 157,
+    "source_sha256": "6bc1d3c4edf3fbb3dd1323a86a74350574b5b56b493703d2089c4fe1232eecaf",
+    "unknown_label": 4,
+    "without_dev_text": 297,
+    "without_dev_text_or_pair": 121
+  }
+}

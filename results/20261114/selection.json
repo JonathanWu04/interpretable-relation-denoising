@@ -1,0 +1,7 @@
+{
+  "context_promotion_passed": true,
+  "no_pristine_holdout": true,
+  "policy": "retain90",
+  "selected_variant": "context_lr",
+  "selection_used": "development OOF only; protocol promotion gate"
+}

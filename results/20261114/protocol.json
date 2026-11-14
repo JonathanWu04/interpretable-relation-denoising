@@ -1,0 +1,44 @@
+{
+  "C_grid": [
+    0.1,
+    1.0,
+    10.0
+  ],
+  "created": "2026-11-14",
+  "data_handling": "Read official ARNOR 2.0 raw files; strict unique entity spans; remove exact duplicate sentence/pair/relation annotations; quarantine inconsistent labels and unknown labels; keep original files unchanged",
+  "diagnostics": [
+    "5 outer fold metrics",
+    "NA/non-NA and per-relation",
+    "sentence-group paired bootstrap CI (1000 replicates)",
+    "test excluding development sentence overlap",
+    "test_noise excluding development sentence overlap",
+    "unseen entity-pair sensitivity",
+    "runtime and model size",
+    "feature weights"
+  ],
+  "inner_folds": 3,
+  "models": [
+    "manual",
+    "rule_lr",
+    "relation_only",
+    "rule_relation",
+    "context_only",
+    "context_lr"
+  ],
+  "outer_folds": 5,
+  "policies": {
+    "recall90": 0.9,
+    "retain90": 0.9,
+    "retain95": 0.95
+  },
+  "primary_model_selection": "Minimum mean inner out-of-fold log loss; tie smaller C; same rule for every learned model",
+  "primary_policy": "retain90",
+  "promotion": "Context LR must improve pooled development OOF noise recall over rule LR under retain90, with clean retention no more than 2 percentage points lower and >=0.88 in both NA/non-NA groups. Otherwise retain rule LR as default and report negative result.",
+  "scope": "Post-course extension; not a neural SOTA claim; no downstream relation-extraction improvement implied by noise metrics",
+  "seed": 20261114,
+  "splitting": "StratifiedGroupKFold; normalize and hash full sentence; all mentions of same normalized sentence together; fit vocab/scalers only on training folds",
+  "task": "Binary validity of a supplied sentence/entity-pair/relation label; positive class = noise",
+  "test_use": "Official dev/test were previously examined in this project; no pristine holdout claimed. Test opened for this run only AFTER all final model/policy configs and development selection are saved; no test-driven revision or tuning.",
+  "threshold_selection": "Separate NA/non-NA thresholds; maximize noise recall subject to clean retention >= target on INNER predictions; threshold constraint is empirical, not a population guarantee. Recall90 is historical aggressive-policy comparator.",
+  "version": "1.0"
+}

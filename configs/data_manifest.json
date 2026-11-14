@@ -1,0 +1,22 @@
+{
+  "source": "https://github.com/PaddlePaddle/Research/tree/master/NLP/ACL2019-ARNOR",
+  "download": "https://baidu-nlp.bj.bcebos.com/arnor_dataset-2.0.0.tar.gz",
+  "files": {
+    "train.json": {
+      "sha256": "1c2759a3a85fe7451e7c8bfe2e732babf4e67d66cde005ba225a507afd611a52",
+      "bytes": 162736434
+    },
+    "dev.json": {
+      "sha256": "df25c0488ad59a57348f0eae35741695dfb10cc8a29c6544df37ea4e32b32990",
+      "bytes": 1302255
+    },
+    "test.json": {
+      "sha256": "b9d688b4a2265c27e39149c5ef5c3a3136669e05c2b7c09e87a1775e9df57e10",
+      "bytes": 1297939
+    },
+    "test_noise.json": {
+      "sha256": "6bc1d3c4edf3fbb3dd1323a86a74350574b5b56b493703d2089c4fe1232eecaf",
+      "bytes": 174764
+    }
+  }
+}
